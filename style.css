@@ -12,3 +12,20 @@ body {
     width: 100%;
 }
 
+section {
+    border: 1px black solid;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div {
+    border: 1px black solid;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
