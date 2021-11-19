@@ -15,7 +15,7 @@
                     <p>entre 1 et 100</p>
                     <p>en 10 tentatives</p>
                 </div>
-                <div id="start">Commencer</div>
+                <button id="start">Commencer</button>
             </div>
         </section>
 
@@ -35,13 +35,13 @@
             </div>
 
             <div id="arrow">
-                <p>Entrez un nombre plus <span id="upOrDown">grand</span></p>
+                <p>Entrez un nombre <span id="upOrDown"></span></p>
                 <div></div>
             </div>
 
             <div id="userChoice">
                 <input type="number" id="nbr" autofocus min="1" max="100">
-                <span id="testBtn">Test</span>
+                <button id="testBtn">Test</button>
             </div>
 
         </div>
@@ -49,18 +49,18 @@
         <section id="win">
             <div>
                 <p>Vous avez gagné !!!</p>
-                <p>Le numéro était le <span class="nbr">100</span></p>
+                <p>Le numéro était le <span class="nbr"></span></p>
+                <button id="reStart">Rejouer</button>
             </div>
         </section>
 
         <section id="loose">
             <div>
                 <p>Vous avez perdu !!!</p>
-                <p>Le numéro était le <span class="nbr">100</span></p>
+                <p>Le numéro était le <span class="nbr"></span></p>
             </div>
         </section>
     </main>
-
 
     <script src="app100.js"></script>
 </body>

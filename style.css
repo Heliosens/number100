@@ -21,6 +21,7 @@ section, section > div, #gameBoard {
 
 section, section > div {
     margin: 0 auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -71,6 +72,7 @@ section p {
 
 #case span {
     width: 6rem;
+    height: 4rem;
     font-size: 3rem;
 }
 
@@ -84,11 +86,12 @@ section p {
     flex-direction: column;
 }
 
-#start {
+button {
     background-color: white;
     border-radius: 3rem;
     padding: 1rem;
     border: black 3px solid;
+    font-size: 2rem;
 }
 
 #win, #loose {
@@ -110,11 +113,7 @@ section p {
 #arrow div {
     width: 5rem;
     height: 5rem;
-    background-image: url("arrow-up-6-xxl.png");
+    /*background-image: url("arrow-up-6-xxl.png");*/
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-#testBtn {
-    padding: 0 .5rem;
 }
