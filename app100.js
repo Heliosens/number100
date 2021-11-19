@@ -57,6 +57,7 @@ test.addEventListener('click', function (){
                 tryNbr = 0;
                 tryNbrDisplay.innerHTML = tryNbr.toString();
                 info.style.display = 'none';
+                upOrDown.innerHTML = "";
             })
         }
         else if (nbrToFind > nbr){
