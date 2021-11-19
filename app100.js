@@ -58,6 +58,7 @@ test.addEventListener('click', function (){
                 tryNbrDisplay.innerHTML = tryNbr.toString();
                 info.style.display = 'none';
                 upOrDown.innerHTML = "";
+                arrow.style.backgroundImage = "unset";
             })
         }
         else if (nbrToFind > nbr){
