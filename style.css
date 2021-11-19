@@ -10,22 +10,61 @@ html {
 
 body {
     width: 100%;
+    font-size: 2rem;
+    text-align: center;
 }
 
-section {
-    border: 1px black solid;
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
+section, section div, #gameBoard {
     display: flex;
+}
+
+section, section div {
+    border: 1px black solid;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
-section div {
-    border: 1px black solid;
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
+section {
+    width: 80vw;
+    height: 80vh;
 }
 
+section div {
+    width: 80%;
+    height: 80%;
+}
+
+#gameBoard {
+    height: 100vh;
+    border: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#case {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#case span {
+    height: 5vh;
+    width: 5rem;
+    border: black 1px solid;
+    margin: 1rem;
+}
+
+#instruction, #win, #loose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#nbr {
+    width: 5rem;
+    height: 5vh;
+}
