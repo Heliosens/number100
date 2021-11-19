@@ -40,25 +40,20 @@
             </div>
 
             <div id="userChoice">
-                <input type="number" id="nbr" autofocus min="1" max="100">
+                <input type="number" id="inNbr" autofocus min="1" max="100">
                 <button id="testBtn">Test</button>
             </div>
 
         </div>
 
-        <section id="win">
+        <section id="info">
             <div>
-                <p>Vous avez gagné !!!</p>
-                <p>Le numéro était le <span class="nbr"></span></p>
+                <span id="nbr"></span>
+                <!-- win or loss -->
+                <p id="weenOrLoos"></p>
                 <button id="reStart">Rejouer</button>
             </div>
-        </section>
 
-        <section id="loose">
-            <div>
-                <p>Vous avez perdu !!!</p>
-                <p>Le numéro était le <span class="nbr"></span></p>
-            </div>
         </section>
     </main>
 

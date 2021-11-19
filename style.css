@@ -15,7 +15,7 @@ body {
     font-family: sans-serif;
 }
 
-section, section > div, #gameBoard {
+section, section > div, #gameBoard, #gameBoard div {
     display: flex;
 }
 
@@ -42,7 +42,7 @@ section p {
     margin: 2rem auto;
 }
 
-#gameBoard, #case span, #nbr, #testBtn {
+#gameBoard, #case span, #inNbr, #testBtn {
     border: #7f0080 3px solid;
     border-radius: 15px;
 }
@@ -54,14 +54,10 @@ section p {
     align-items: center;
 }
 
-#gameBoard div {
-    display: flex;
-}
-
 #userChoice {
     width: 20%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #case {
@@ -76,7 +72,7 @@ section p {
     font-size: 3rem;
 }
 
-#instruction, #win, #loose {
+#instruction, #info {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,11 +90,11 @@ button {
     font-size: 2rem;
 }
 
-#win, #loose {
+#info {
     display: none;
 }
 
-#nbr {
+#inNbr {
     width: 6rem;
     height: 6vh;
     font-size: 2rem;
@@ -113,7 +109,12 @@ button {
 #arrow div {
     width: 5rem;
     height: 5rem;
-    /*background-image: url("arrow-up-6-xxl.png");*/
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#nbr {
+    font-size: 10rem;
+    color: black;
+    text-shadow: white 0 0 5px;
 }
