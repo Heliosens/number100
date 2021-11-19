@@ -73,6 +73,7 @@ test.addEventListener('click', function (){
             arrow.style.backgroundImage = "url('arrow-down-6-xxl.png')";
         }
         tryNbrDisplay.innerHTML = tryNbr.toString();
+        document.getElementById("inNbr").focus();
         if(tryNbr === 10){
             wOrL.innerHTML = "Vous avez perdu !!!"
             info.style.display = "flex";
