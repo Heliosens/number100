@@ -20,7 +20,6 @@ section, section > div, #gameBoard {
 }
 
 section, section > div {
-    border: 1px black solid;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -75,11 +74,6 @@ section p {
     font-size: 3rem;
 }
 
-/* todo remove */
-#instruction {
-    display: none;
-}
-
 #instruction, #win, #loose {
     position: absolute;
     top: 0;
@@ -94,6 +88,7 @@ section p {
     background-color: white;
     border-radius: 3rem;
     padding: 1rem;
+    border: black 3px solid;
 }
 
 #win, #loose {
@@ -118,4 +113,8 @@ section p {
     background-image: url("arrow-up-6-xxl.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#testBtn {
+    padding: 0 .5rem;
 }
