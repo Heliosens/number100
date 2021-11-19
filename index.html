@@ -5,39 +5,46 @@
     <title>number 100</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <main>
-        <div id="gameBoard">
-            <p>Tentative : <span id="try">0</span> / 10</p>
-            <div id="case">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div>
-                <p>Entrez un nombre plus <span id="upOrDown">grand</span></p>
-                <!-- todo img arrow up or down -->
-            </div>
-
-            <input type="number" id="nbr" autofocus min="1" max="100">
-
-        </div>
-
         <section id="instruction">
             <div>
-                <p>Trouver un nombre entre 1 et 100 en 10 tentatives</p>
+                <div>
+                    <p>Trouver un nombre</p>
+                    <p>entre 1 et 100</p>
+                    <p>en 10 tentatives</p>
+                </div>
+                <div id="start">Commencer</div>
             </div>
         </section>
+
+        <div id="gameBoard">
+            <p>Tentative : <span id="tryNbr">0</span> / 10</p>
+            <div id="case">
+                <span>100</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="arrow">
+                <p>Entrez un nombre plus <span id="upOrDown">grand</span></p>
+                <div></div>
+            </div>
+
+            <div id="userChoice">
+                <input type="number" id="nbr" autofocus min="1" max="100">
+                <span id="testBtn">Test</span>
+            </div>
+
+        </div>
 
         <section id="win">
             <div>
